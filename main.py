@@ -3,8 +3,8 @@ import requests
 import pypokedex
 import urllib3
 import tkinter as tk
-import PIL.image
-from io import BytesIO 
+#import PIL.image
+#from io import BytesIO 
 
 """
 # -- DESCRIPTION/POKEDEX -- #
@@ -32,12 +32,12 @@ for key, value in data.items():
 # -- ABILITIES -- #
 URL = "https://pokeapi.co/api/v2/ability/static"
 
-def trace(*args):
-  for debug output
-  print(*args)
-  pass
+#def trace(*args):
+  #for debug in output:
+    #print(*args)
+    #pass
 
-trace("Calling", URL)
+#trace("Calling", URL)
 response = requests.get(URL)
 response.raise_for_status()
 data = response.json()
@@ -56,7 +56,7 @@ for entry in effect_changes:
   #response = requests.get(URL)
   #
 
-trace("\nHere are all the key/value pairs in the JSON response:")
+#trace("\nHere are all the key/value pairs in the JSON response:")
 #for key, value in data.items():
 #  trace (key, ": ", value)
   
